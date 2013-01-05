@@ -7,6 +7,7 @@ CREATE SEQUENCE seq_surrogate_key;
 
 CREATE TABLE dim_customers (
 	surrogate_key INTEGER PRIMARY KEY NOT NULL DEFAULT nextval('seq_surrogate_key'),
+	id INTEGER NOT NULL,
 	name VARCHAR,
 	address VARCHAR
 );
